@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra Papel Tesoura</title>
+    <link rel="stylesheet" href="ppt.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pedra • Papel • Tesoura</h1>
+
+        <div class="choices" id="choices">
+            <button class="choice" data-choice="pedra">🪨 Pedra</button>
+            <button class="choice" data-choice="papel">📄 Papel</button>
+            <button class="choice" data-choice="tesoura">✂️ Tesoura</button>
+        </div>
+
+        <div class="result" id="result">
+            <p>Você escolheu: <span id="user"></span></p>
+            <p>Máquina escolheu: <span id="cpu"></span></p>
+            <h2 id="winner"></h2>
+
+            <button id="retry" class="retry">Tentar novamente</button>
+        </div>
+    </div>
+
+    <script src="ppt.js"></script>
+</body>
+</html>
